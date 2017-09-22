@@ -1,0 +1,31 @@
+.footer {
+	background: var(--color_p);
+	&-title {
+		color: var(--color_light);
+		margin-bottom: 10px;
+	}
+	p {
+		color: var(--color_light); 
+	}
+	&-item {
+		margin-bottom: 20px;
+		a {
+			color: var(--color_light); 
+			padding: 5px 0;
+			display: block;
+			left: 0;
+			position: relative;
+			transition: all 0.2s ease;
+		}
+		nav {
+			li {
+				&:hover {
+					background: #ced2da;
+					a {
+						left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

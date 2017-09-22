@@ -1,0 +1,69 @@
+a, button {
+	cursor: pointer;
+}
+
+a {
+	color: var(--color_theme);
+}
+.btn {
+	color: var(--color_theme);
+	display: inline-block;
+	position: relative;
+	border: 0;
+	&-small {
+		padding: 5px;
+	}
+	&-theme {
+		background: var(--color_theme);
+		color: #fff;
+		padding: 5px 10px;
+	}
+	&-theme-invert {
+		color: var(--color_theme);
+		background: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&-radius {
+		borderRadius(3px);
+	}
+	&-shadow {
+		box-shadow: 4px 4px var(--color_theme)_dark;
+	}
+	&-block {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	&-circle {
+		borderRadius(50%);
+	}
+	&-dark {
+		background: #454545;
+	}
+	&-pink {
+		background: #ff7777;
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+	&-icon {
+		font-size: 0;
+		mx-size(30px);
+		text-align: center;
+		display: block;
+		&:before {
+			display: block;
+			position: absolute;
+			font-family: FontAwesome
+  			content: "\f09a";
+  			font-size: 20px;
+		    top: 5px;
+		    left: 0;
+		    right: 0;
+		}
+		&.icon-facebook {
+			content: "\f09a";
+		}
+	}
+}
