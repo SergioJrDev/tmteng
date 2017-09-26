@@ -73,6 +73,47 @@
 		height: 250px;
 		background-position: center;
 		background-size: cover;
+		display: flex;
+		position: relative;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		.project-box {
+			z-index: 1;
+			text-align: center;
+			transform: translateY(161px);
+			transition: all .4s ease;
+			h2 {
+				color: #fff;
+			}
+			span {
+				background: var(--color_theme)
+				color: #fff;
+				padding: 4px 8px;
+				display: inline-block;
+				border-radius: 4px;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 100%;
+			background: rgba(53, 53, 53, 0.42);
+			height: 100%;
+			opacity: 0;
+			transition: opacity .4s ease;
+		}
+		&:hover {
+			.project-box {
+				transform: translateY(0px)
+			}
+			&:after {
+				opacity: 1;
+			}
+		}
 	}
 }
 
